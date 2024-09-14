@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  margin: 3in;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.card {
+  background: url("assets/card_hidden.png") no-repeat;
+  background-size: 100% 100%;
+  width: 25%;
+  aspect-ratio: 1/1;
+  font-size: 24px;
+
+  /* from https://css-tricks.com/keep-pixelated-images-pixelated-as-they-scale/ */
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.revealed-card {
+  background: url("assets/card_revealed.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+#card-box {
+  display: flex;
+  flex-wrap: wrap;
+}
